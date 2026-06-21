@@ -1,0 +1,52 @@
+<% layout("layouts/boilerplate") %>
+
+<h2>Edit Listing</h2>
+
+<form action="/listings/<%= listing._id %>?_method=PUT" method="POST">
+
+  <input 
+    name="title" 
+    value="<%= listing.title %>" 
+    class="form-control mb-2"
+    placeholder="Title"
+  >
+
+  <!-- ✅ DESCRIPTION FIX -->
+  <textarea 
+    name="description" 
+    class="form-control mb-2"
+    placeholder="Enter description..."><%= listing.description || "" %></textarea>
+
+    
+  <input 
+    name="image" 
+    value="<%= listing.image %>" 
+    class="form-control mb-2"
+    placeholder="Image URL"
+  >
+
+  <input 
+    name="price" 
+    value="<%= listing.price %>" 
+    class="form-control mb-2"
+    placeholder="Price"
+  >
+
+  <input 
+    name="location" 
+    value="<%= listing.location %>" 
+    class="form-control mb-2"
+    placeholder="Location"
+  >
+
+  <!-- ✅ COUNTRY FIELD ADD -->
+  <input 
+    name="country" 
+    value="<%= listing.country || '' %>" 
+    class="form-control mb-2"
+    placeholder="Country"
+  >
+
+  <button class="btn btn-success">Update</button>
+
+</form>

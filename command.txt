@@ -1,0 +1,2 @@
+nodemom app.js ---- for run the server
+node init/index.js --- for restore the data again

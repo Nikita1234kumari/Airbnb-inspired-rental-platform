@@ -1,0 +1,120 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff385c;
+    text-decoration: none;
+}
+
+/* NAV LINKS */
+.nav-links a,
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.navbar a:hover {
+    color: #ff385c;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    background: #ff385c;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.login-btn:hover {
+    background: #e03150;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    padding: 20px;
+}
+
+/* ================= CARD DESIGN ================= */
+.listing-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.listing-card:hover {
+    transform: scale(1.03);
+}
+
+/* CARD IMAGE */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ================= SHOW PAGE ================= */
+.show-img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ================= LOGIN PAGE ================= */
+.login-container {
+    width: 350px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #ff385c;
+    color: white;
+    border: none;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card-body p {
+ margin: 4px 0;
+}
