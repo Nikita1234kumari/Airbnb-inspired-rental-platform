@@ -8,7 +8,7 @@ const ejsMate = require("ejs-mate");
 const open = (...args) => import('open').then(module => module.default(...args));
 
 // ================= DB =================
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL = "mongodb+srv://nikitatiwary05_db_user:V86H85HMfQttK4kr@cluster0.wbe0wbs.mongodb.net/airbnb?retryWrites=true&w=majority";
 
 async function main() {
   await mongoose.connect(MONGO_URL);
